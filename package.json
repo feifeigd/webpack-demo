@@ -4,15 +4,17 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack"
-    ,"dev": "webpack-dev-server --host 127.0.0.1 --port 80 --open --config webpack.config.js"
-    ,"test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress --hide-modules",
+    "dev": "webpack-dev-server --open --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "style-loader": "^0.21.0",
     "webpack": "^4.7.0",
     "webpack-cli": "^2.1.2",
     "webpack-dev-server": "^3.1.4"
